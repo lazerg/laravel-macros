@@ -13,8 +13,8 @@ class RenameKeys implements Macro
     {
         return function (array $haystack, array $changes): array {
             foreach ($changes as $oldKeyName => $newKeyName) {
-                $array[$newKeyName] = $haystack[$oldKeyName];
-                unset($array[$oldKeyName]);
+                $haystack[$newKeyName] = $haystack[$oldKeyName];
+                unset($haystack[$oldKeyName]);
             }
 
             return $haystack;
