@@ -1,0 +1,33 @@
+{
+    "name": "lazerg/laravel-macros",
+    "description": "Laravel macros",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lazerg",
+            "email": "lazerg2@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.0|^7.3",
+        "illuminate/support": "^6.0|^7.0|^8.0|^9.0",
+        "illuminate/http": "^6.0|^7.0|^8.0|^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lazerg\\LaravelMacros\\": "src/"
+        }
+    },
+    "suggest": {
+        "barryvdh/laravel-ide-helper": "This package generates helper files that enable your IDE to provide accurate autocompletion. Generation is done based on the files in your project, so they are always up-to-date."
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lazerg\\LaravelMacros\\LaravelMacrosServiceProvider"
+            ]
+        }
+    }
+}
