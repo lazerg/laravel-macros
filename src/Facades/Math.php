@@ -2,17 +2,28 @@
 
 namespace Lazerg\LaravelMacros\Facades;
 
-use Illuminate\Support\Facades\Facade;
+use Ballen\Distical\Calculator as DistanceCalculator;
+use Ballen\Distical\Entities\LatLong;
 
-class Math extends Facade
+class Math
 {
     /**
-     * Get the registered name of the component.
+     * Distance between two latitude-longitude coordinates
      *
-     * @return string
+     * @param float $fromLat
+     * @param float $fromLng
+     * @param float $toLat
+     * @param float $toLng
+     *
+     * @return float
      */
-    protected static function getFacadeAccessor(): string
+    public function distanceBetween(float $fromLat, float $fromLng, float $toLat, float $toLng): float
     {
-        return 'math';
+        $from = new LatLong($fromLat, $fromLng);
+        $to = new LatLong($toLat, $toLng);
+
+        $distance = new DistanceCalculator($from, $to);
+
+        return $distance->get()->asMiles();
     }
 }
