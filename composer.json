@@ -19,10 +19,7 @@
     "autoload": {
         "psr-4": {
             "Lazerg\\LaravelMacros\\": "src/"
-        },
-        "files": [
-            "src/helpers.php"
-        ]
+        }
     },
     "suggest": {
         "barryvdh/laravel-ide-helper": "This package generates helper files that enable your IDE to provide accurate autocompletion. Generation is done based on the files in your project, so they are always up-to-date."
