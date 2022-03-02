@@ -5,6 +5,7 @@ namespace Lazerg\LaravelMacros;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
+use Lazerg\LaravelMacros\Facades\Calculator;
 use Throwable;
 
 class LaravelMacrosServiceProvider extends ServiceProvider
@@ -15,6 +16,10 @@ class LaravelMacrosServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->app->singleton('math', function () {
+            return new Calculator();
+        });
+
         $directories = File::directories(__DIR__ . '/Macros');
 
         foreach ($directories as $directory) {
