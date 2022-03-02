@@ -41,7 +41,5 @@ This package provides an additional IDE helper file for Laravel macros with the 
 - `Str::`
   - [`bind`](https://github.com/lazerg/laravel-macros/blob/main/src/Macros/Str/Bind.php)
 
-### Services
-
-- `math()`
-  - [`distanceBetween`](https://github.com/lazerg/laravel-macros/blob/main/src/Services/Math.php#L20)
+- `Math::`
+  - [`distanceBetween`](https://github.com/lazerg/laravel-macros/blob/main/src/Macros/Math/DistanceBetween.php)
