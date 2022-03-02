@@ -20,6 +20,7 @@ It is advised to be used with [Laravel IDE Helper](https://github.com/barryvdh/l
 This package provides an additional IDE helper file for Laravel macros with the syntax you are already used to in Laravel IDE Helper.
 
 ### Additional documentation coming soon...
+
 ### Macros
 
 - `Arr::`
@@ -39,3 +40,8 @@ This package provides an additional IDE helper file for Laravel macros with the 
 
 - `Str::`
   - [`bind`](https://github.com/lazerg/laravel-macros/blob/main/src/Macros/Str/Bind.php)
+
+### Services
+
+- `math()`
+  - [`distanceBetween`](https://github.com/lazerg/laravel-macros/blob/main/src/Services/Math.php#L20)
