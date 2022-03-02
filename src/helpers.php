@@ -1,6 +1,6 @@
 <?php
 
-use Lazerg\LaravelMacros\Facades\Math;
+use Lazerg\LaravelMacros\Services\Math;
 
 if (!function_exists('math')) {
     /**

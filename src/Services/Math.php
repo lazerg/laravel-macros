@@ -1,6 +1,6 @@
 <?php
 
-namespace Lazerg\LaravelMacros\Facades;
+namespace Lazerg\LaravelMacros\Services;
 
 use Ballen\Distical\Calculator as DistanceCalculator;
 use Ballen\Distical\Entities\LatLong;

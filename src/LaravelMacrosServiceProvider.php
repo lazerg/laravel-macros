@@ -5,7 +5,7 @@ namespace Lazerg\LaravelMacros;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
-use Lazerg\LaravelMacros\Facades\Math;
+use Lazerg\LaravelMacros\Services\Math;
 use Throwable;
 
 class LaravelMacrosServiceProvider extends ServiceProvider
