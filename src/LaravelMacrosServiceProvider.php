@@ -5,7 +5,7 @@ namespace Lazerg\LaravelMacros;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
-use Illuminate\Support\Traits\Macroable;
+use Lazerg\LaravelMacros\Services\Math;
 use Throwable;
 
 class LaravelMacrosServiceProvider extends ServiceProvider
@@ -16,11 +16,7 @@ class LaravelMacrosServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->app->singleton('math', function () {
-            return new class() {
-                use Macroable;
-            };
-        });
+        $this->app->singleton('math', fn() => new Math());
 
         $directories = File::directories(__DIR__ . '/Macros');
 
