@@ -28,6 +28,7 @@ This package provides an additional IDE helper file for Laravel macros with the 
 
 
 - `File::`
+  - [`fromJson`](https://github.com/lazerg/laravel-macros/blob/main/src/Macros/File/FromJson.php)
   - [`fromBase64`](https://github.com/lazerg/laravel-macros/blob/main/src/Macros/File/FromBase64.php)
   - [`toBase64`](https://github.com/lazerg/laravel-macros/blob/main/src/Macros/File/ToBase64.php)
   - [`generateName`](https://github.com/lazerg/laravel-macros/blob/main/src/Macros/File/GenerateName.php)
