@@ -12,7 +12,7 @@ class IsEquals implements Macro
      */
     public function macro(): callable
     {
-        return function (string $key, mixed $value, callable $callback, ?callable $otherwise = null): bool {
+        return function (string $key, mixed $value): bool {
             /** @type Request $this */
             return $this->get($key) === $value;
         };
