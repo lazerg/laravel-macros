@@ -44,3 +44,4 @@ This package provides an additional IDE helper file for Laravel macros with the 
 
 - `Math::`
   - [`distanceBetween`](https://github.com/lazerg/laravel-macros/blob/main/src/Macros/Math/DistanceBetween.php)
+  - [`round5`](https://github.com/lazerg/laravel-macros/blob/main/src/Macros/Math/Round5.php)
