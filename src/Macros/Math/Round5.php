@@ -11,8 +11,18 @@ class Round5 implements Macro
      */
     public function macro(): callable
     {
-        return function (float|int $number): float {
-            return ceil($number / 5) * 5;
+        return function (float|int $number): int {
+            $floor_to_minimum_10 = floor($number / 10) * 10;
+
+            $number -= $floor_to_minimum_10;
+
+            if ($number < 2.5) {
+                return $floor_to_minimum_10;
+            } else if ($number >= 2.5 && $number < 7.5) {
+                return $floor_to_minimum_10 + 5;
+            } else {
+                return $floor_to_minimum_10 + 10;
+            }
         };
     }
 }
