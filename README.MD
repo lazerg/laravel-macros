@@ -41,6 +41,7 @@ This package provides an additional IDE helper file for Laravel macros with the 
 
 - `Str::`
   - [`bind`](https://github.com/lazerg/laravel-macros/blob/main/src/Macros/Str/Bind.php)
+  - [`pluralWithNumber`](https://github.com/lazerg/laravel-macros/blob/main/src/Macros/Str/PluralWithNumber.php)
 
 - `Math::`
   - [`distanceBetween`](https://github.com/lazerg/laravel-macros/blob/main/src/Macros/Math/DistanceBetween.php)
